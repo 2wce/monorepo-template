@@ -64,6 +64,8 @@
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/builder-vite": "^0.3.0",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
@@ -74,15 +76,15 @@
     "concurrently": "^7.6.0",
     "eslint": "^7.32.0",
     "eslint-config-custom": "*",
-    "postcss": "^8.4.21",
+    "postcss-loader": "7.0.2",
     "react": "^18.2.0",
-    "tailwindcss": "^3.2.4",
     "tsc-alias": "^1.8.2",
     "tsconfig": "*",
     "typescript": "^4.5.2",
     "vite": "^4.0.4",
     "vite-plugin-dts": "^1.7.1",
-    "vite-tsconfig-paths": "4.0.5"
+    "vite-tsconfig-paths": "4.0.5",
+    "webpack": "5.75.0"
   },
   "peerDependencies": {
     "react": "^18.2.0",
