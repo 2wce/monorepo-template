@@ -133,7 +133,7 @@ jobs:
         uses: SebRollen/toml-action@v1.0.2
         id: app_name
         with:
-          file: "fly.toml"
+          file: "apps/remix/fly.toml"
           field: "app"
 
       - name: 🐳 Set up Docker Buildx
@@ -160,7 +160,7 @@ jobs:
       - name: 🐳 Docker build
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: ./apps/remix/
           push: true
           tags: registry.fly.io/${{ steps.app_name.outputs.value }}:${{ github.ref_name }}-${{ github.sha }}
           build-args: |
