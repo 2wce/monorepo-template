@@ -8,11 +8,11 @@
     "src"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build --tsconfig ./tsconfig.json",
     "test": "tsdx test --passWithNoTests",
     "lint": "eslint",
     "prepare": "tsdx build",
@@ -84,16 +84,16 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addons": "^6.5.16",
     "@storybook/react": "^6.5.16",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
     "autoprefixer": "^10.4.13",
     "babel-loader": "^9.1.2",
     "eslint-config-react-app": "7.0.1",
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-is": "^17",
     "size-limit": "^8.1.2",
     "tailwindcss": "^3.2.4",
     "tsdx": "^0.14.1",
